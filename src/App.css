@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Just Another Hand', cursive;
+}
+
+.nav-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 15px 0 15px;
+}
+
+.nav-header i {
+  font-size: 2.2em;
+  padding-top: 5px;
+}
+
+.the-nav h2 {
+  text-align: center;
+}
+
+.the-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.the-nav li {
+  list-style: none;
+  padding: 10px;
+}
+
+.home-cover {
+  background-image: linear-gradient(rgba(107, 103, 103, 0.5), rgba(83, 80, 80, 0.5)), url('./images/disorganized.jpg');
+  background-position: center;
+  width: 100%;
+  min-height: 400px;
+  text-align: center;
+  color: white;
+  padding-top: 35%;
+}
+
+.home-cover h2 {
+  font-size: 2.4em;
+  margin: 3% auto;
+}
+
+.section {
+  padding: 60px 30px;
+  text-align: center;
+  border-bottom: .5px solid black;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.second-section p {
+  line-height: 1.8em;
+  font-size: 1.4em;
+  font-weight: 100;
+}
+
+.testimonials {
+  text-align: left;
+  width: 100%;
+  padding: 20px;
+  margin: 10px;
+  border: 5px solid black;
+}
+
+.foot {
+  grid-area: f;
+  padding: 5%;
+}
+
+.socials {
+  font-size: 1.8em;
+}
+
+.socials i {
+  padding-right: 1.6em;
+}
+
+.service-provided {
+  width: 100%;
+  border-bottom: 1px solid slategray;
+  padding: 5%;
+}
+
+.service-provided p {
+  width: 100%;
+}
+
+.service-photo img {
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+  border: 5px solid black;
+}
+
+.service-copy h1{
+  font-family: 'Just Another Hand', cursive;
+  font-size: 2.5em;
+}
+
+.about-section {
+  padding: 15px;
+}
+
+.about-section h1 {
+  font-size: 3.4em;
+}
+
+.about-section p {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  padding: 1%;
+}
+
+@media (min-width: 800px) {
+  .container {
+    height: 100%;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 2fr repeat(10, 1fr);
+    grid-template-rows: 80px auto 40px;
+    grid-template-areas:
+      "h h h h h h h h h h h h"
+      "m c c c c c c c c c c c"
+      "f f f f f f f f f f f f"
+  }
+  
+  .big-head {
+    grid-area: h;
+    background: white;
+    width: 100%;
+  }
+  
+  .side-menu {
+    grid-area: m;
+    list-style: none;
+    padding: 100px 20px;
+    font-size: 1.4em;
+    height: 100vh;
+    position: fixed;
+  }
+
+  .side-menu a {
+    color: black;
+  }
+
+  .side-menu a:hover {
+    color: lightslategrey;
+  }
+
+  nav li {
+    padding: 35px 0;
+  }
+  
+  .content {
+    grid-area: c;
+  }
+  
+  .big-head h1 {
+    font-size: 4.4em;
+    text-align: center;
+  }
+
+  .service-provided {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .service-copy {
+    padding: 120px 80px;
+  }
+}
