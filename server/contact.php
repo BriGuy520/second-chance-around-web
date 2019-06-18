@@ -1,17 +1,33 @@
-<!DOCTYPE html>
+<?php 
+
+$firstname = check_input($_POST['firstname']);
+$lastname = check_input($_POST['lastname']);
+$email = check_input($_POST['email']);
+$details = check_input($_POST['details']);
+
+?>
+
 <html lang="en">
 <body>
-  <form action="contact.php" method="POST">
-    <p>
-      Name:<input type="text" name="firstname" /><input type="text" name="lastname" />
-      Email:<input type="text" name="email" />
-    </p>
-    <p>Project Start Date:<input type="date" name="startdate" /></p>
-    <p>Project End Date:<input type="date" name="enddate" /></p>
-    <p>More Details:<br/></p>
-    <textarea name="details" rows="10" cols="10"></textarea>
-    </p>
-
+  <p>Your first name is: <?php echo $firstname; ?></p>
+  <p>Your last name is: <?php echo $lastname; ?></p>
+  <p>Your email name is: <?php echo $email; ?></p>
+  <p>Details for your project: <?php echo $details; ?></p>
 
 </body>
 </html>
+
+<?php 
+function check_input ($data, $problem="")
+{
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+
+  if($problem && strlen($data) == 0)
+  {
+    die($problem);
+  }
+  return $data;
+}
+?>

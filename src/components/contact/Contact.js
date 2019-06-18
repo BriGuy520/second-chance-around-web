@@ -1,12 +1,12 @@
 import React from 'react';
-import GeneralRequest from '../contact/GeneralRequest';
+import Consultation from './Consultation';
 
 const Contact = () => {
   return (
     <div className="content">
       <h1>Contact Us</h1>
       <div>
-        <GeneralRequest />
+        <Consultation />
       </div>
     </div>
   );

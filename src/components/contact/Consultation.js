@@ -8,7 +8,7 @@ const GeneralRequest = () => {
         Not ready just yet, but still have questions? Don't sweat it. Fill out all of the relevant information below. 
         and we will get back to you ASAP. We promise.
       </p>
-      <form /*action="contact.php" method="POST" */>
+      <form action="contact.php" method="POST">
       <p>
         Name*<br/><input type="text" name="firstname" /><input type="text" name="lastname" /><br/>
         Email*<br/><input type="text" name="email" />
@@ -22,6 +22,7 @@ const GeneralRequest = () => {
       <p>More Details<br/>
         <textarea name="details" rows="10" cols="100"></textarea>
       </p>
+      <input type="submit" value="send it">REQUEST</input>
   </form>
 
     </div>
