@@ -162,7 +162,7 @@ select {
     grid-template-columns: 2fr repeat(10, 1fr);
     grid-template-rows: 80px auto 40px;
     grid-template-areas:
-      "h h h h h h h h h h h h"
+      "h c c c c c c c c c c c"
       "m c c c c c c c c c c c"
       "f f f f f f f f f f f f"
   }
@@ -176,7 +176,7 @@ select {
   .side-menu {
     grid-area: m;
     list-style: none;
-    padding: 100px 20px;
+    padding: 0 20px 100px 20px;
     font-size: 1.4em;
     height: 100vh;
     position: fixed;

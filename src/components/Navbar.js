@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Header from './Header';
 import Menu from './Menu';
 
 class Navbar extends Component {
@@ -67,7 +66,6 @@ class Navbar extends Component {
         } else {
             return (
                 <React.Fragment>
-                    <Header />
                     <Menu />
                 </React.Fragment>     
             );
