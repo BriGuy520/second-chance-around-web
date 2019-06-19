@@ -1,5 +1,6 @@
 import React from 'react';
 import Consultation from './Consultation';
+import General from './General';
 
 const Contact = () => {
   return (
@@ -7,6 +8,7 @@ const Contact = () => {
       <h1>Contact Us</h1>
       <div>
         <Consultation />
+        <General />
       </div>
     </div>
   );
