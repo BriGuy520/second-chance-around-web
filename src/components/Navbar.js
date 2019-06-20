@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Menu from './Menu';
 
 class Navbar extends Component {
@@ -47,14 +48,14 @@ class Navbar extends Component {
                 <div className="the-nav">
                     <header>
                         <div className="nav-header">
-                            <h2>SECOND CHANCE AROUND</h2>
+                            <Link to="/"><h1>SECOND CHANCE AROUND</h1></Link>
                             <i onClick={this.showMenu} className="bars icon"></i>
                         </div>
                         { this.state.showMenu ? (
                             <nav>
-                                <li key={service}>SERVICES</li>
-                                <li key={about}>ABOUT US</li>
-                                <li key={contact}>CONTACT</li>
+                                <Link to='/services'><li key={1}>SERVICES</li></Link>
+                                <Link to='/about'><li key={2}>ABOUT US</li></Link>
+                                <Link to='/contact'><li key={3}>CONTACT</li></Link>
                             </nav>
                             ) : (
                                 null
