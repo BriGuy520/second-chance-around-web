@@ -128,6 +128,13 @@ h1 {
 }
 
 /* Contact Forms */
+.contact-section {
+  padding: 10px;
+}
+
+.contact-btn {
+  text-align: right;
+}
 
 .general-request {
   padding: 25px;

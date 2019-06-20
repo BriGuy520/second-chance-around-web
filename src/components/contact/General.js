@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const General = () => {
+const General = (props) => {
+
+  const [cancelGeneral, setGeneral] = useState(props.questionForm);
 
   return (
+    <div>
+    {cancelGeneral ?
     <div className="general-request content">
       <form>
         <p>
@@ -16,9 +20,11 @@ const General = () => {
           <textarea name="details" rows="10" cols="100"></textarea>
         </p>
         <button className="ui button primary" type="submit">Submit</button>
-        <button className="ui button red">Cancel</button>
+        <button onClick={() => setGeneral(false)} className="ui button red">Cancel</button>
       </form>
     </div>
+    : <button className="ui button black contact-btn" onClick={() => setGeneral(true)}>Show Form</button>}
+  </div>
   )
 }
 
