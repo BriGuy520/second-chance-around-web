@@ -10,13 +10,14 @@ body {
 
 h1 {
   font-family: 'Just Another Hand', cursive;
+  font-size: 2em;
 }
 
 .nav-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 15px 15px 0 15px;
+  padding: 13px 10px 10px 10px;
 }
 
 .nav-header i {
@@ -24,8 +25,9 @@ h1 {
   padding-top: 5px;
 }
 
-.the-nav h2 {
+.the-nav h1 {
   text-align: center;
+  color: black;
 }
 
 .the-nav {
@@ -36,6 +38,7 @@ h1 {
 .the-nav li {
   list-style: none;
   padding: 10px;
+  color: black;
 }
 
 .home-cover {
@@ -45,12 +48,12 @@ h1 {
   min-height: 400px;
   text-align: center;
   color: white;
-  padding-top: 35%;
 }
 
 .home-cover h2 {
-  font-size: 2.4em;
-  margin: 3% auto;
+  font-size: 3.8em;
+  font-weight: 200;
+  padding: 25% 0;
 }
 
 .section {
