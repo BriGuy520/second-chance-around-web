@@ -41,16 +41,29 @@ h1 {
   color: black;
 }
 
-.home-cover {
-  background-image: linear-gradient(rgba(107, 103, 103, 0.5), rgba(83, 80, 80, 0.5)), url('./images/disorganized.jpg');
+.home-cover, .contact-cover, .about-cover {
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   min-height: 400px;
   text-align: center;
   color: white;
 }
 
-.home-cover h2 {
+.home-cover {
+  background-image: linear-gradient(rgba(107, 103, 103, 0.5), rgba(83, 80, 80, 0.5)), url('./images/disorganized.jpg');
+}
+
+.contact-cover {
+  background-image: linear-gradient(rgba(107, 103, 103, 0.5), rgba(83, 80, 80, 0.5)), url('./images/contact.jpg');
+}
+
+.about-cover {
+  background-image: linear-gradient(rgba(107, 103, 103, 0.5), rgba(83, 80, 80, 0.5)), url('./images/about.jpg');
+}
+
+.home-cover h2, .contact-cover h2, .about-cover h2 {
   font-size: 3.8em;
   font-weight: 200;
   padding: 25% 0;

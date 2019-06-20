@@ -3,7 +3,9 @@ import React from 'react';
 const About = () => {
   return (
     <div className="about-section content">
-      <h1>About Us</h1>
+      <div className="about-cover">
+        <h2>About Us</h2>
+      </div>
       <p>
       Co-Founder and CEO Ashley began taking on personal organizing jobs when she found her day job 
       as a nanny becoming less and less time consuming. As she began to help more and more clients with 

@@ -9,7 +9,9 @@ function Contact(){
 
   return (
     <div className="content">
-      <h2>Contact Us</h2>
+      <div className="contact-cover">
+        <h2>Contact Us</h2>
+      </div>
       <div>
         <div className="contact-section">
           <h1>Consultation Request</h1>
