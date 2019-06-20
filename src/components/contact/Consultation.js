@@ -10,11 +10,6 @@ class Consultation extends Component {
   render(){
     return (
       <div className="general-request content">
-        <h1>General Request</h1>
-        <p>
-          Not ready just yet, but still have questions? Don't sweat it. Fill out all of the relevant information below. 
-          and we will get back to you ASAP. We promise.
-        </p>
         <form onSubmit={this.handleSubmit} action="../../server/contact.php" method="post">
         <p>
           Name*<br/><input type="text" name="firstname" /><input type="text" name="lastname" /><br/>
@@ -36,6 +31,7 @@ class Consultation extends Component {
           <textarea name="details" rows="10" cols="100"></textarea>
         </p>
         <button className="ui button primary" type="submit">Submit</button>
+        <button className="ui button red" type="submit">Cancel</button>
     </form>
 
     </div>
