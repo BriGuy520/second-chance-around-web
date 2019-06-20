@@ -52,9 +52,9 @@ class Navbar extends Component {
                         </div>
                         { this.state.showMenu ? (
                             <nav>
-                                <li>SERVICES</li>
-                                <li>ABOUT US</li>
-                                <li>CONTACT</li>
+                                <li key={service}>SERVICES</li>
+                                <li key={about}>ABOUT US</li>
+                                <li key={contact}>CONTACT</li>
                             </nav>
                             ) : (
                                 null
