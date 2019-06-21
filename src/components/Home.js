@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Home extends Component {
 
@@ -9,17 +10,20 @@ class Home extends Component {
             testimonials: [{
                     customer: "Angela P.",
                     residence: "River Forest, IL",
-                    testimony: "Ashley was a joy to work with. was very professional and a huge weight was lifted after we got through the process. She helped me decide what was truly meaningful and what I should finally part with.  We even put some things in a small storage space to revisit in a year.  I can't thank her enough."
+                    testimony: "Ashley was a joy to work with. was very professional and a huge weight was lifted after we got through the process. She helped me decide what was truly meaningful and what I should finally part with.  We even put some things in a small storage space to revisit in a year.  I can't thank her enough.",
+                    background: "#ffff80"
                 },
                 {
                     customer: "Jackie C.",
                     residence: "Chicago, IL",
-                    testimony: "Ashley was a joy to work with. was very professional and a huge weight was lifted after we got through the process. She helped me decide what was truly meaningful and what I should finally part with.  We even put some things in a small storage space to revisit in a year.  I can't thank her enough."
+                    testimony: "Ashley was a joy to work with. was very professional and a huge weight was lifted after we got through the process. She helped me decide what was truly meaningful and what I should finally part with.  We even put some things in a small storage space to revisit in a year.  I can't thank her enough.",
+                    background: "#80ffe5"
                 },
                 {
                     customer: "Brian F.",
                     residence: "Austin, TX",
-                    testimony: "Ashley was a joy to work with. was very professional and a huge weight was lifted after we got through the process. She helped me decide what was truly meaningful and what I should finally part with.  We even put some things in a small storage space to revisit in a year.  I can't thank her enough."
+                    testimony: "Ashley was a joy to work with. was very professional and a huge weight was lifted after we got through the process. She helped me decide what was truly meaningful and what I should finally part with.  We even put some things in a small storage space to revisit in a year.  I can't thank her enough.",
+                    background: "#ff99ff"
                 }]
         }
     }
@@ -27,7 +31,7 @@ class Home extends Component {
     renderTestimonials(){
         return this.state.testimonials.map(testimonial => {
             return (
-                <div className="testimonials">
+                <div className="testimonial" style={{background: testimonial.background}}>
                     <p>
                         {testimonial.testimony}
                     </p>
@@ -49,13 +53,17 @@ class Home extends Component {
                     <p>
                     The most effective method of any organizing project begins with discarding… let one of our Simplifying Specialist guide you through the difficult process of deciding what should stay and what should go. 
                     </p>
-                    <button className="ui button black">
-                        Make Appointment
-                    </button>
+                    <Link to="/contact">
+                        <button className="ui button black">
+                            Make Appointment
+                        </button>
+                    </Link>
                 </div>
                 <div className="third-section section">
                     <h1>Don't Take Our Word For It. Read What Our Customers Have to Say...</h1>
-                    {this.renderTestimonials()}
+                    <div className="testimonials">
+                        {this.renderTestimonials()}
+                    </div> 
                 </div>
             </div>
             

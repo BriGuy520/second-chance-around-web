@@ -8,7 +8,7 @@ const Service = ({ offerings }) => {
         <div className="service-copy">
           <h1>{offered.type}</h1>
           <p>{offered.description}</p>
-          <span>${offered.rate}/hour</span>
+          { typeof offered.rate === "number" ? <span>${offered.rate}/hour</span> : <span>{offered.rate}</span> }
         </div>
         <div className="service-photo">
           <img src={offered.picture} alt="services" />
