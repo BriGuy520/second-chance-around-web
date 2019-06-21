@@ -4,11 +4,12 @@ const General = (props) => {
 
   const [cancelGeneral, setGeneral] = useState(props.questionForm);
 
+
   return (
     <div>
     {cancelGeneral ?
-    <div className="general-request content">
-      <form>
+    <div className="general-request close content">
+      <form className="fadein">
         <p>
           Name*<br/><input type="text" name="firstname" /><input type="text" name="lastname" /><br/>
           Email*<br/><input type="text" name="email" />

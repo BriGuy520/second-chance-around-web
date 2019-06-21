@@ -7,8 +7,8 @@ const Consultation = (props) => {
   return (
     <div>
       {cancelRequest ?
-      <div className="general-request content">
-        <form /*onSubmit={this.handleSubmit} action="../../server/contact.php" method="post"*/>
+      <div className="general-request close content">
+        <form className="fadin"/*onSubmit={this.handleSubmit} action="../../server/contact.php" method="post"*/>
           <p>
             Name*<br/><input type="text" name="firstname" /><input type="text" name="lastname" /><br/>
             Email*<br/><input type="text" name="email" />

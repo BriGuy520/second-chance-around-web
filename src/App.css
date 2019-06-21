@@ -141,12 +141,27 @@ h1 {
 }
 
 /* Contact Forms */
+
 .contact-section {
-  padding: 10px;
+  padding: 2%;
+  border-bottom: 1px solid black;
 }
 
-.contact-btn {
-  text-align: right;
+.fadein {
+  animation-duration: 2s;
+  animation-name: slidedown;
+}
+
+@keyframes slidedown {
+  from {
+    top: 0;
+    height: 0%;
+  }
+
+  to {
+    top: -500px;
+    height: 100%;
+  }
 }
 
 .general-request {
