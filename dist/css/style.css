@@ -1,0 +1,290 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Just Another Hand', cursive;
+  font-size: 2em;
+}
+
+.nav-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 13px 10px 10px 10px;
+}
+
+.nav-header i {
+  font-size: 2.2em;
+  padding-top: 5px;
+}
+
+.the-nav h1 {
+  text-align: center;
+  color: black;
+}
+
+.the-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.the-nav li {
+  list-style: none;
+  padding: 10px;
+  color: black;
+}
+
+.home-cover, .contact-cover, .about-cover {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 400px;
+  text-align: center;
+  color: white;
+}
+
+.home-cover {
+  background-image: linear-gradient(rgba(107, 103, 103, 0.5), rgba(83, 80, 80, 0.5)), url(../../0c6d54c9a0bfe58febf8f41087f92c7c.jpg);
+}
+
+.contact-cover {
+  background-image: linear-gradient(rgba(107, 103, 103, 0.5), rgba(83, 80, 80, 0.5)), url(../../42945d8988c1300de417d3499a3afec4.jpg);
+}
+
+.about-cover {
+  background-image: linear-gradient(rgba(107, 103, 103, 0.5), rgba(83, 80, 80, 0.5)), url(../../db000bb137072517a197ed1b5acdc7f8.jpg);
+}
+
+.home-cover h2, .contact-cover h2, .about-cover h2 {
+  font-size: 3.8em;
+  font-weight: 200;
+  padding: 25% 0;
+}
+
+.section {
+  padding: 60px 30px;
+  text-align: center;
+  border-bottom: .5px solid black;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.second-section p {
+  line-height: 1.8em;
+  font-size: 1.4em;
+  font-weight: 100;
+}
+
+.testimonial {
+  text-align: left;
+  width: 100%;
+  padding: 20px;
+  margin: 10px;
+  border: 5px solid black;
+}
+
+.foot {
+  grid-area: f;
+  padding: 5%;
+}
+
+.socials {
+  font-size: 1.8em;
+}
+
+.socials i {
+  padding-right: 1.6em;
+}
+
+.service-provided {
+  width: 100%;
+  border-bottom: 1px solid slategray;
+  padding: 5%;
+}
+
+.service-provided p {
+  width: 100%;
+}
+
+.service-photo img {
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+  border: 5px solid black;
+}
+
+.service-copy h1 {
+  font-family: 'Just Another Hand', cursive;
+  font-size: 2.5em;
+}
+
+.about-section {
+  padding: 15px;
+  border-bottom: 1px solid black;
+}
+
+.about-section h1 {
+  font-size: 3.4em;
+}
+
+.about-section p {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  padding: 1%;
+}
+
+/* Contact Forms */
+
+.contact-section {
+  padding: 2%;
+  border-bottom: 1px solid black;
+}
+
+.fadein {
+  animation-duration: 1s;
+  animation-name: slidedown;
+}
+
+@keyframes slidedown {
+  0% {
+    max-height: 0;
+    opacity: 0;
+  }
+
+  100% {
+    max-height: 600px;
+    opacity: 1;
+  }
+
+}
+
+.general-request {
+  padding: 25px;
+}
+
+.general-request p {
+  padding: 5px 10px 5px 5px;
+  font-weight: 600;
+}
+
+.general-request input {
+  background: rgb(248, 248, 248);
+  padding: 10px;
+  margin: 15px 5px 15px 0;
+  border-radius: 3px;
+  border: 1px solid rgb(177, 180, 184);
+  width: 40%;
+}
+
+input[type=date]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  display: none;
+}
+
+select {
+  padding: 5px;
+  margin: 5px 0 14px 0;
+}
+
+@media (min-width: 800px) {
+  .container {
+    height: 100%;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 2fr repeat(10, 1fr);
+    grid-template-rows: 80px auto 40px;
+    grid-template-areas:
+      "h c c c c c c c c c c c"
+      "m c c c c c c c c c c c"
+      "f f f f f f f f f f f f"
+  }
+  
+  .big-head {
+    grid-area: h;
+    background: white;
+    width: 100%;
+  }
+  
+  .side-menu {
+    grid-area: m;
+    list-style: none;
+    padding: 0 20px 100px 20px;
+    font-size: 1.4em;
+    height: 100vh;
+    position: fixed;
+  }
+
+  .side-menu a {
+    color: black;
+  }
+
+  .side-menu a:hover {
+    color: lightslategrey;
+  }
+
+  nav li {
+    padding: 35px 0;
+  }
+  
+  .content {
+    grid-area: c;
+  }
+  
+  .big-head h1 {
+    font-size: 4.4em;
+    text-align: center;
+  }
+
+  .testimonials {
+    display: grid;
+    grid-template-columns: repeat(8, 200px);
+    grid-template-rows: repeat(12, 50px);
+  }
+
+  .testimonial:nth-child(1) {
+    grid-column: 1 / 4;
+    grid-row: 1 / 5;
+  }
+
+  .testimonial:nth-child(2) {
+    grid-column: 3 / 6;
+    grid-row: 3 / 7;
+    z-index: 1;
+  }
+  
+  .testimonial:nth-child(3) {
+    grid-column: 2 / 4;
+    grid-row: 6 / 12;
+    padding-top: 40px;
+  }
+
+  .service-provided {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .service-copy {
+    padding: 120px 80px;
+  }
+}
