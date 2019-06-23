@@ -25,15 +25,15 @@ module.exports = {
         {
           fallback: 'style-loader',
           use: 'css-loader',
-          publicPath: '../../'
+          publicPath: '..'
         }
       )
     },
     {
-      test: /\.(png|jpg|jpeg|gif)$/,
+      test: /\.(png|jpe?g|svg|gif)$/i,
       use: [
         {
-          loader: 'file-loader'
+          loader: 'file-loader?name=/images/[name].[ext]'
         }
       ]
     }]
@@ -42,7 +42,7 @@ module.exports = {
     new HtmlWebPackPlugin({
       hash: true,
       filename: "index.html",
-      template: "./src/public/index.html" // source html
+      template: "./dist/index.html" // source html
     }),
     new ExtractTextPlugin({ filename: 'css/style.css'})
   ]
