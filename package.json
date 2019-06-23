@@ -9,12 +9,13 @@
     "start": "node_modules/.bin/webpack-dev-server --mode development --open --hot",
     "build": "node_modules/.bin/webpack --config webpack.prod.js --mode production",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "serve": "node_modules/.bin/http-server ./dist"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1"
