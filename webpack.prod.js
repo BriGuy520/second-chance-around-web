@@ -42,7 +42,7 @@ module.exports = {
     new HtmlWebPackPlugin({
       hash: true,
       filename: "./index.html",
-      template: "./index.html" // source html
+      template: "./dist/index.html" // source html
     }),
     new ExtractTextPlugin({ filename: 'css/style.css'})
   ]
