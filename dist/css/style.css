@@ -65,15 +65,15 @@ h1 {
 }
 
 .home-cover {
-  background-image: linear-gradient(rgba(107, 103, 103, 0.5), rgba(83, 80, 80, 0.5)), url(../../0c6d54c9a0bfe58febf8f41087f92c7c.jpg);
+  background-image: linear-gradient(rgba(107, 103, 103, 0.5), rgba(83, 80, 80, 0.5)), url(./images0c6d54c9a0bfe58febf8f41087f92c7c.jpg);
 }
 
 .contact-cover {
-  background-image: linear-gradient(rgba(107, 103, 103, 0.5), rgba(83, 80, 80, 0.5)), url(../../42945d8988c1300de417d3499a3afec4.jpg);
+  background-image: linear-gradient(rgba(107, 103, 103, 0.5), rgba(83, 80, 80, 0.5)), url(./images42945d8988c1300de417d3499a3afec4.jpg);
 }
 
 .about-cover {
-  background-image: linear-gradient(rgba(107, 103, 103, 0.5), rgba(83, 80, 80, 0.5)), url(../../db000bb137072517a197ed1b5acdc7f8.jpg);
+  background-image: linear-gradient(rgba(107, 103, 103, 0.5), rgba(83, 80, 80, 0.5)), url(./imagesdb000bb137072517a197ed1b5acdc7f8.jpg);
 }
 
 .home-cover h2, .contact-cover h2, .about-cover h2 {

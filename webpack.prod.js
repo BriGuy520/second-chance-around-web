@@ -33,8 +33,7 @@ module.exports = {
       test: /\.(png|jpg|jpeg|gif)$/,
       use: [
         {
-          loader: 'file-loader',
-          publicPath: './'
+          loader: 'file-loader'
         }
       ]
     }]
@@ -43,7 +42,7 @@ module.exports = {
     new HtmlWebPackPlugin({
       hash: true,
       filename: "index.html",
-      template: "./dist/index.html" // source html
+      template: "./src/public/index.html" // source html
     }),
     new ExtractTextPlugin({ filename: 'css/style.css'})
   ]
