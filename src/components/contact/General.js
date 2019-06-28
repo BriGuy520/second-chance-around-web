@@ -18,7 +18,7 @@ const General = (props) => {
           Subject*<br/><input type="text" name="subject" />
         </p>
         <p>Message*<br/>
-          <textarea name="details" rows="10" cols="100"></textarea>
+          <textarea name="details" rows="10" cols="75"></textarea>
         </p>
         <button className="ui button primary" type="submit">Submit</button>
         <button onClick={() => setGeneral(false)} className="ui button red">Cancel</button>

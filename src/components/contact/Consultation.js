@@ -26,7 +26,7 @@ const Consultation = (props) => {
             Project End Date*<br/><input type="date" name="enddate" />
           </p>
           <p>More Details<br/>
-            <textarea name="details" rows="10" cols="100"></textarea>
+            <textarea name="details" rows="10" cols="75"></textarea>
           </p>
           <button className="ui button primary" type="submit">Submit</button>
           <button className="ui button red" type="submit" onClick={() => setRequest(false)}>Cancel</button>
