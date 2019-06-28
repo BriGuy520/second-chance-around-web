@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 
-const General = (props) => {
+const General = ({questionForm, formValues}) => {
 
-  const [cancelGeneral, setGeneral] = useState(props.questionForm);
+  const [cancelGeneral, setGeneral] = useState(questionForm);
+
+  console.log(formValues);
 
 
   return (

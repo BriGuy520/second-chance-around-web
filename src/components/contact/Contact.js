@@ -4,9 +4,21 @@ import General from './General';
 
 function Contact(){
 
+  let values = {
+    fname: '',
+    lname: '',
+    email: '',
+    project: '',
+    startDate: '',
+    endDate: '',
+    message: '',
+    mailSent: false,
+    error: null
+  }
+
   const [request, setRequest] = useState(false);
   const [general, setGeneral] = useState(false);
-  
+  const [formValues, setValues] = useState(values);
 
  const handleClick = () => {
     setGeneral(true);
@@ -25,7 +37,7 @@ function Contact(){
             No problem. Please fill out the form below with any questions you have. 
             We promise, we'll get back to you ASAP.
           </p> 
-          {request ? <Consultation  consultForm={request} /> : <button id="form" className="ui button black contact-btn" onClick={() => setRequest(true)}>Show Form</button>}  
+          {request ? <Consultation  consultForm={request} formValues={formValues} /> : <button id="form" className="ui button black contact-btn" onClick={() => setRequest(true)}>Show Form</button>}  
         </div>
         <div className="contact-section">
           <h1>General Questions</h1>
@@ -33,7 +45,7 @@ function Contact(){
             Not ready just yet, but still have questions? Don't sweat it. Fill out all of the relevant information below. 
             and we will get back to you ASAP. We promise.
           </p>
-          { general ? <General questionForm={general} /> : <button id="form2" className="ui button black contact-btn" onClick={handleClick}>Show Form</button>} 
+          { general ? <General questionForm={general} formValues={formValues} /> : <button id="form2" className="ui button black contact-btn" onClick={handleClick}>Show Form</button>} 
         </div>
       </div>
     </div>
