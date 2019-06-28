@@ -112,6 +112,14 @@ h1 {
 
 .service-provided p {
   width: 100%;
+  font-size: 1.2em;
+}
+
+.services-price {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2em;
+  margin: 20px 0;
 }
 
 .service-photo img {
