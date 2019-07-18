@@ -66,9 +66,9 @@ class Navbar extends Component {
             );
         } else {
             return (
-                <React.Fragment>
+                <div>
                     <Menu />
-                </React.Fragment>     
+                </div>     
             );
         }
     }

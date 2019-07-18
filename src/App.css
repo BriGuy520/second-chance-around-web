@@ -15,7 +15,6 @@ h1 {
 
 .nav-header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   padding: 13px 10px 10px 10px;
 }
@@ -210,36 +209,20 @@ select {
     grid-template-columns: 2fr repeat(10, 1fr);
     grid-template-rows: 80px auto 40px;
     grid-template-areas:
-      "h c c c c c c c c c c c"
-      "m c c c c c c c c c c c"
+      "m m m m m m m m m m m m"
+      "c c c c c c c c c c c c"
+      "c c c c c c c c c c c c"
+      "c c c c c c c c c c c c"
       "f f f f f f f f f f f f"
   }
-  
-  .big-head {
-    grid-area: h;
-    background: white;
-    width: 100%;
-  }
-  
-  .side-menu {
+
+  .the-nav {
     grid-area: m;
-    list-style: none;
-    padding: 0 20px 100px 20px;
-    font-size: 1.4em;
-    height: 100vh;
-    position: fixed;
-  }
-
-  .side-menu a {
-    color: black;
-  }
-
-  .side-menu a:hover {
-    color: lightslategrey;
   }
 
   nav li {
-    padding: 35px 0;
+    display: flex; 
+    flex-direction: row; 
   }
   
   .content {
@@ -247,7 +230,7 @@ select {
   }
   
   .big-head h1 {
-    font-size: 4.4em;
+    font-size: 2.4em;
     text-align: center;
   }
 
